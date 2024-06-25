@@ -1,0 +1,49 @@
+.navbar-brand{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-link.active {
+    /* text-decoration: underline; */
+    color: #000;
+    text-decoration: none;
+    position: relative;
+}
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px; /* Adjust this value to control the space */
+    width: 100%;
+    height: 2px; /* Adjust this value to control the underline thickness */
+    background-color: black;
+}
+
+.nav-link.active:hover::after {
+    background-color: #ffc107; /* Darker shade for hover state */
+}
+
+.brand-group{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 1.2;
+}
+.profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; 
+    border: 3px solid #2f2f2f;
+    background-color: #b5b3b3;
+    margin-right: 0.5rem;
+}
+.ms-auto [href]:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    border-radius: 10%;
+}
+.ms-auto .work-imp{
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 10%;
+}
