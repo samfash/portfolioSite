@@ -19,6 +19,7 @@
 }
 
 .role{
+    font-family: "Ubuntu", sans-serif;
     font-weight: 800;
     font-size: 2.5rem;
     margin: 1rem 0 2.5rem;
@@ -41,6 +42,9 @@ a {
     }
     .cta{
         flex-direction: row-reverse;
+    }
+    .front-left span{
+        display: flex;
     }
 }
 @media only screen and (max-width: 600px) {
