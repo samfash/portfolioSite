@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import "../assets/Css/Contact.css";
 import { useLocation } from 'react-router-dom';
+import ContactForm from "../components/contactForm";
 
 const Contact = () => {
   const location = useLocation();
@@ -56,64 +57,7 @@ const Contact = () => {
       <section id="contact-form" className="contact-section">
         <div className="container">
           <h2>Drop Me a Message</h2>
-          <form method="post">
-            <div className="contact-form">
-              <div className="form-left">
-                <div className="form-group">
-                  <label htmlFor="name">Name</label>
-                  <input
-                    type="text"
-                    name="txtName"
-                    className="form-control"
-                    placeholder="Your Name *"
-                    value=""
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label htmlFor="email">Email</label>
-                  <input
-                    type="text"
-                    name="txtEmail"
-                    className="form-control"
-                    placeholder="Your Email *"
-                    value=""
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label htmlFor="txtPhone">Phone No</label>
-                  <input
-                    type="text"
-                    name="txtPhone"
-                    className="form-control"
-                    placeholder="Your Phone Number *"
-                    value=""
-                  />
-                </div>
-              </div>
-              <div className="form-right">
-                <div className="form-group">
-                  <label htmlFor="message">Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    className="form-control"
-                    placeholder="Your Message *"
-                    required
-                  ></textarea>
-                </div>
-              </div>
-              <button
-                type="submit"
-                name="btnSubmit"
-                className="btn btn-primary"
-                value="Send Message"
-              >
-                send message
-              </button>
-            </div>
-          </form>
+         <ContactForm/>
         </div>
       </section>
     </div>
