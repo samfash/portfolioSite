@@ -14,8 +14,8 @@ const Home = () => {
               <p>Full-Stack Developer</p>
               <p>Data Scientist</p>
               </div>
-              <p> I build websites, web apps and Ai-models.</p>
-              <p>Currently focused on seamless integration with any AI.</p>
+              <span> I build websites, web apps and Ai-models.</span>
+              <span>Currently focused on seamless integration with any AI.</span>
               <div className="cta">
               <button
                 className="btn btn-warning"

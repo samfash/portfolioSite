@@ -53,7 +53,7 @@ export default function Footer() {
         <Typography display="inline" fontWeight={500} fontSize={30}>
           |
         </Typography>
-        <Box sx={{ textAlign: "center" }}>
+        <Box sx={{ textAlign: "center", wordBreak: "break-all" }}>
           <Typography variant="body2" fontWeight={600}>
             Email
           </Typography>

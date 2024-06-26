@@ -1,5 +1,5 @@
 .homePage-section{
-    padding: 30px 20px;
+    padding: 30px 1rem;
     background-color: #f4f4f4;
     background: conic-gradient(from 180deg at 50% 1%,white, black);
     filter: opacity(1);
@@ -7,18 +7,22 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 1rem;
     
 }
 .front-left{
-    line-height: 0.7;
+    line-height: 1.5;
     padding-top: 20px;
+}
+.front-left span{
+    display: inline-block;
 }
 
 .role{
     font-weight: 800;
     font-size: 2.5rem;
     margin: 1rem 0 2.5rem;
+    line-height: 0.7;
 }
 .cta{
     margin-top: 3rem;
@@ -31,11 +35,25 @@ a {
     color: inherit; /* Inherits the color from the parent element, or you can set a specific color */
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .homePage-section{
-        background: conic-gradient(from 270deg at 50% 48%,white, black);
+        background: conic-gradient(from 270deg at 50% 40%,white, black);
     }
     .cta{
         flex-direction: row-reverse;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .homePage-section{
+        background: conic-gradient(from 270deg at 50% 56%,white, black);
+    }
+    .role{
+        font-size: 1.7rem;
+    }
+    .front-left{
+        line-height: 1.2;
+    }
+    .cta{
+        max-width: 80%;
     }
 }
