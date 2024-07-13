@@ -1,5 +1,7 @@
 import frontImg from "../assets/images/laptop_wave.png";
 import "../assets/Css/home.css"
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import {Link} from "react-router-dom"
 
 const Home = () => {
@@ -8,7 +10,7 @@ const Home = () => {
       <section id="portF" className="homePage-section">
         <div className="container">
           <div className="row front">
-            <div className="col-lg-6 front-left">
+            <div className="col-lg-6 col-md-6 front-left">
               <p>Hello there, I am a</p>
               <div className="role">
               <p>Full-Stack Developer</p>
@@ -21,17 +23,17 @@ const Home = () => {
                 className="btn btn-warning"
                 type="button"
               >
-              <Link to='/contact-me#contact-form'>Let's Chat</Link>
+              <a href="https://wa.me/2348160649644" target="_blank" rel="noopener noreferrer">Let's Chat on WhatsApp <WhatsAppIcon></WhatsAppIcon></a>
               </button>
               <button
               type="button"
-                className="btn btn-outline-secondary"
+                className="btn btn-outline-dark"
               >
-              <Link to={"/who-i-am"}>view profile</Link>
+              <Link to={"/who-i-am"}>view profile <ArrowCircleRightIcon/></Link>
               </button>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
               <img src={frontImg} className="img-fluid" alt="front_image" />
             </div>
           </div>

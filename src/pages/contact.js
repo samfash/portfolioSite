@@ -22,7 +22,7 @@ const Contact = () => {
           <div className="contact-form">
             <div className="form-left row">
               <div className="work-hours col-md-6">
-                <h5>Working Hours</h5>
+                <h5><strong>Working Hours</strong></h5>
                 <p>check below to see the hours we are available</p>
                 <p className="day">Monday-Friday</p>
                 <p className="time">8am - 5pm</p>

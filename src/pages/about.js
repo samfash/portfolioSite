@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/Css/About.css";
-import resume from "../assets/standcv.pdf"; // Update the path as needed
+import resume from "../assets/standcv.pdf";
+import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 
 const About = () => {
   return (
@@ -153,7 +154,7 @@ const About = () => {
                   className="btn btn-primary"
                   download="your-resume.pdf"
                 >
-                  Download Resume
+                  Download Resume <FileDownloadOutlinedIcon/>
                 </a>
               </div>
             </div>

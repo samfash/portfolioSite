@@ -1,7 +1,7 @@
 .contact-section {
     padding: 30px 20px;
     background-color: #f4f4f4;
-background-image: url("../images/asfalt-dark.png");
+    background-image: url("../images/asfalt-dark.png");
   }
   
   .container {
@@ -14,10 +14,11 @@ background-image: url("../images/asfalt-dark.png");
     text-align: center;
     margin-bottom: 40px;
     font-size: 2.5em;
+    font-family: "Ubuntu", sans-serif;
+
   }
   
   .contact-section p {
-    /* text-align: center; */
     margin: 10px 0 40px;
   }
   
@@ -69,14 +70,19 @@ background-image: url("../images/asfalt-dark.png");
     max-width:100%;
   }
   .work-hours .day{
-    text-decoration: underline;
+    display: inline-block;
+    border-bottom: 2px solid rgb(255, 193, 7); /* Change the color and thickness of the underline */
+    padding-bottom: 15px;
+    margin-bottom: 0;
   }
   .work-hours .time{
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 500;
     color: #007bff;
   }
- 
+ .address h2{
+  text-align: left;
+ }
 
   /* Responsive Design */
 @media (max-width: 768px) {

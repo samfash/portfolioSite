@@ -21,7 +21,7 @@
 .role{
     font-family: "Ubuntu", sans-serif;
     font-weight: 800;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     margin: 1rem 0 2.5rem;
     line-height: 0.7;
 }
@@ -38,18 +38,23 @@ a {
 
 @media only screen and (max-width: 768px) {
     .homePage-section{
-        background: conic-gradient(from 270deg at 50% 40%,white, black);
+        background: conic-gradient(from 270deg at 50% 43%,white, black);
     }
     .cta{
         flex-direction: row-reverse;
+        max-width: 60%;
+    }
+    .cta button{
+        max-width: 45%;
     }
     .front-left span{
         display: flex;
     }
+
 }
 @media only screen and (max-width: 600px) {
     .homePage-section{
-        background: conic-gradient(from 270deg at 50% 56%,white, black);
+        background: conic-gradient(from 270deg at 50% 50%,white, black);
     }
     .role{
         font-size: 1.7rem;
@@ -59,5 +64,34 @@ a {
     }
     .cta{
         max-width: 80%;
+    }
+
+}
+@media only screen and (max-width: 425px) {
+    .homePage-section{
+    background: conic-gradient(from 270deg at 50% 56%,white, black);
+    }
+}
+@media only screen and (min-width: 768px) {
+    .homePage-section{
+        background: conic-gradient(from 180deg at 50% 1%,white, black);
+    }
+    .front-left{
+        font-size: 75%;
+    }
+    .cta{
+        max-width: 70%;
+    }
+    .cta button{
+        max-width: 45%;
+    }
+
+}
+@media (min-width: 992px) {
+    .front-left{
+        font-size: 100%;
+    }
+    .cta{
+        max-width: 70%;
     }
 }

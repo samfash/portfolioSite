@@ -1,3 +1,4 @@
+
 const skillz = [
     {category: "Front-end Development",
         details:[
@@ -5,8 +6,7 @@ const skillz = [
                 rate: "⭐⭐⭐⭐"
             },
             {skill:"Css",
-                rate: "⭐⭐⭐⭐"
-            },
+                rate: "⭐⭐⭐⭐"},
             {skill:"javaScript",
                 rate: "⭐⭐⭐⭐"
             },
@@ -46,7 +46,7 @@ const skillz = [
                 rate: "⭐⭐⭐⭐"
             },
             {skill:"MySQL",
-                rate: "⭐⭐⭐⭐"
+                rate: "⭐⭐⭐"
             },
             {skill:"SQLite",
                 rate: "⭐⭐⭐⭐"
@@ -62,7 +62,7 @@ const skillz = [
     {category: "Data Science & machine Learning",
         details:[
             {skill:"Python",
-                rate: "⭐⭐⭐⭐"
+                rate: "⭐⭐⭐⭐⭐"
             },
             {skill:"tensorFlow",
                 rate: "⭐⭐⭐⭐"
@@ -96,7 +96,7 @@ const skillz = [
                 rate: "⭐⭐⭐⭐"
             },
             {skill:"Azure",
-                rate: "⭐⭐⭐"
+                rate: "⭐⭐"
             },
             {skill:"GCP",
                 rate: "⭐⭐⭐⭐"

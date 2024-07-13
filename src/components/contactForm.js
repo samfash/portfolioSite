@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
+import SendIcon from '@mui/icons-material/Send';
 
 
 const ContactForm = () => {
@@ -96,7 +97,7 @@ const ContactForm = () => {
           </div>
         </div>
         <button type="submit" name="submit" className="btn btn-primary">
-          send message
+        <SendIcon/> Submit
         </button>
       </div>
     </form>
