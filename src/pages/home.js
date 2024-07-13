@@ -11,16 +11,16 @@ const Home = () => {
         <div className="container">
           <div className="row front">
             <div className="col-lg-6 col-md-6 front-left">
-              <p>Hello there, I am a</p>
+              <p className="moveUp">Hello there, <span className="intro"> I am a</span></p>
               <div className="role">
               <p>Full-Stack Developer</p>
               <p>Data Scientist</p>
               </div>
-              <span> I build websites, web apps and Ai-models.</span>
-              <span>Currently focused on seamless integration with any AI.</span>
+              <span className="moveDown"> I build websites, web apps and Ai-models.</span>
+              <span className="moveDown">Currently focused on seamless integration with any AI.</span>
               <div className="cta">
               <button
-                className="btn btn-warning"
+                className="btn btn-warning whatsappBut"
                 type="button"
               >
               <a href="https://wa.me/2348160649644" target="_blank" rel="noopener noreferrer">Let's Chat on WhatsApp <WhatsAppIcon></WhatsAppIcon></a>
