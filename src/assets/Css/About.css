@@ -95,6 +95,12 @@
     text-align: center;
     padding: 15px 0;
   }
+  .downloadCV a{
+    transition: transform 0.3s ease;
+}
+  .downloadCV a{
+    transform: scale(1.1);
+  }
 
   @media (max-width: 768px) {
     .downloadCV{

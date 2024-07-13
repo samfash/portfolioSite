@@ -24,6 +24,7 @@
     font-size: 2.5em;
     margin: 1rem 0 2.5rem;
     line-height: 0.7;
+    animation: fadeIn 2s ease-in-out;
 }
 .cta{
     margin-top: 3rem;
@@ -35,6 +36,20 @@ a {
     text-decoration: none; /* Removes the underline */
     color: inherit; /* Inherits the color from the parent element, or you can set a specific color */
 }
+.cta button{
+    transition: transform 0.3s ease;
+}
+.cta button:hover{
+    transform: scale(1.1);
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 @media only screen and (max-width: 768px) {
     .homePage-section{
