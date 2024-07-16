@@ -12,6 +12,9 @@ const ContactForm = () => {
   });
 
   const [status, setStatus] = useState('');
+  // const formspree = 'https://formspree.io/f/mzzppywq'
+  // const serverBackend = 'http://localhost:5000/send'
+    const server = 'https://portfoliobackend-yokf.onrender.com/send'
 
 
   const handleChange = (e) => {
@@ -27,7 +30,7 @@ const ContactForm = () => {
     console.log(formData);
     setStatus('Sending...');
 
-    axios.post('https://formspree.io/f/mzzppywq', formData)
+    axios.post(server, formData)
             .then(response => {
                 setStatus('Success! Thank you for your submission.');
                 setFormData({
@@ -76,7 +79,7 @@ const ContactForm = () => {
               type="text"
               name="phone"
               className="form-control"
-              placeholder="Your Phone Number *"
+              placeholder="Your Phone Number"
               value={formData.phone}
               onChange={handleChange}
             />
