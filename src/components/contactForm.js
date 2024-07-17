@@ -14,7 +14,7 @@ const ContactForm = () => {
   const [status, setStatus] = useState('');
   // const formspree = 'https://formspree.io/f/mzzppywq'
   // const serverBackend = 'http://localhost:5000/send'
-    const server = 'https://portfoliobackend-yokf.onrender.com/send'
+    const server = 'https://portfoliobackend-g6gy.onrender.com/send'
 
 
   const handleChange = (e) => {
