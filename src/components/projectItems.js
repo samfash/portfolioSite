@@ -1,6 +1,6 @@
-import emissionPic from "../assets/images/enerscend-web.png"
-import modelPic from "../assets/images/emission-pic.png"
-import charityPic from "../assets/images/fash-charity.png"
+import emissionPic from "../assets/images/enerscend-web.webp"
+import modelPic from "../assets/images/emission-pic.webp"
+import charityPic from "../assets/images/fash-charity.webp"
 
 
 const Projects = [

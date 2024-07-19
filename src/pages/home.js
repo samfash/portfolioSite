@@ -1,4 +1,4 @@
-import frontImg from "../assets/images/laptop_wave.png";
+import frontImg from "../assets/images/laptop_wave.webp";
 import "../assets/Css/home.css"
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -7,10 +7,10 @@ import {Link} from "react-router-dom"
 const Home = () => {
   return (
     <div>
-      <section id="portF" className="homePage-section">
+      <section id="homePage-section">
         <div className="container">
-          <div className="row front">
-            <div className="col-lg-6 col-md-6 front-left">
+          <div className="row">
+            <div className="col-md-6 front-left">
               <p className="moveUp">Hello there, <span className="intro"> I am a</span></p>
               <div className="role">
               <p>Full-Stack Developer</p>
@@ -33,8 +33,8 @@ const Home = () => {
               </button>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6">
-              <img src={frontImg} className="img-fluid" alt="front_image" />
+            <div class="col-md-6">
+              <img src={frontImg} className="img-fluid" alt="front_image" loading="lazy" />
             </div>
           </div>
         </div>

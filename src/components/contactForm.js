@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import axios from 'axios';
+import { Button, CircularProgress} from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
+import Alert from '@mui/material/Alert';
 
 
 const ContactForm = () => {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -12,9 +15,9 @@ const ContactForm = () => {
   });
 
   const [status, setStatus] = useState('');
-  // const formspree = 'https://formspree.io/f/mzzppywq'
+  const formspree = 'https://formspree.io/f/mzzppywq'
   // const serverBackend = 'http://localhost:5000/send'
-    const server = 'https://portfoliobackend-yokf.onrender.com/send'
+    // const server = 'https://portfoliobackend-yokf.onrender.com/send'
 
 
   const handleChange = (e) => {
@@ -28,11 +31,12 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    setStatus('Sending...');
+    setLoading(true);
 
-    axios.post(server, formData)
+    axios.post(formspree, formData)
             .then(response => {
-                setStatus('Success! Thank you for your submission.');
+                setStatus('Success! Thank you for your submission, I will get back to you shortly.');
+                setLoading(false);
                 setFormData({
                     name: '',
                     email: '',
@@ -46,6 +50,7 @@ const ContactForm = () => {
             console.log(status)
   };
   return (
+    <div>
     <form onSubmit={handleSubmit}>
       <div className="contact-form">
         <div className="form-left">
@@ -99,11 +104,22 @@ const ContactForm = () => {
             ></textarea>
           </div>
         </div>
-        <button type="submit" name="submit" className="btn btn-primary">
-        <SendIcon/> Submit
-        </button>
+        <Button type="submit" 
+          name="submit" 
+          className="btn btn-primary" 
+          variant="contained"
+          color="primary"
+          disabled={loading}
+          startIcon={loading ? <CircularProgress /> : <SendIcon />}
+        >
+         {loading ? 'Submitting...' : 'Submit'}
+        </Button>
       </div>
     </form>
+    {status!== ""&&<Alert severity={loading? "error": "success"}
+     onClose={() => {setStatus(""); setLoading(false)}}
+     >{status}</Alert>}
+    </div>
   );
 };
 

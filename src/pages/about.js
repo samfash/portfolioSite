@@ -2,11 +2,12 @@ import React from "react";
 import "../assets/Css/About.css";
 import resume from "../assets/standcv.pdf";
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
+import AboutSkills from "../components/aboutSkills";
 
 const About = () => {
   return (
     <div>
-      <section id="about" className="about-section">
+      <section id="about-section">
         <div className="container">
           <h2>About Me</h2>
           <div className="about-content">
@@ -32,47 +33,36 @@ const About = () => {
                 <h3 className="divider-text">Technical Skills</h3>
               </div>
               <div className="skills">
-                <div className="skill-category">
-                  <h4>Front-End Development</h4>
-                  <ul>
-                    <li>HTML, CSS, JavaScript</li>
-                    <li>Frameworks: React, Vue.js, Angular</li>
-                    <li>Tools: Webpack, Babel, Sass</li>
-                  </ul>
-                </div>
-                <div className="skill-category">
-                  <h4>Back-End Development</h4>
-                  <ul>
-                    <li>Node.js, Express.js</li>
-                    <li>Python: Django, Flask, FastAPI</li>
-                    <li>Java: Spring Boot</li>
-                  </ul>
-                </div>
-                <div className="skill-category">
-                  <h4>Database Management</h4>
-                  <ul>
-                    <li>SQL: PostgreSQL, MySQL, SQLite</li>
-                    <li>NoSQL: MongoDB, Redis</li>
-                  </ul>
-                </div>
-                <div className="skill-category">
-                  <h4>Data Science & Machine Learning</h4>
-                  <ul>
-                    <li>Languages: Python, R</li>
-                    <li>
-                      Libraries: TensorFlow, PyTorch, Scikit-Learn, Pandas
-                    </li>
-                    <li>Data Visualization: Matplotlib, Seaborn, Plotly</li>
-                  </ul>
-                </div>
-                <div className="skill-category">
-                  <h4>DevOps & Tools</h4>
-                  <ul>
-                    <li>Docker, Kubernetes</li>
-                    <li>AWS, Azure, GCP</li>
-                    <li>CI/CD: Jenkins, GitHub Actions, Travis CI</li>
-                  </ul>
-                </div>
+                <AboutSkills
+                  head="Front-End Development"
+                  body1="HTML, CSS, JavaScript"
+                  body2="Frameworks: React, Vue.js, Angular"
+                  body3="Tools: Webpack, Babel, Sass"
+                />
+                <AboutSkills
+                  head="Back-End Development"
+                  body1="Node.js, Express.js"
+                  body2="Python: Django, Flask, FastAPI"
+                  body3="Java: Spring Boot"
+                />
+                <AboutSkills
+                  head="Database Management"
+                  body1="SQL: PostgreSQL, MySQL, SQLite"
+                  body2="NoSQL: MongoDB, Redis"
+                  body3="ORMs, Transactions, Normalization"
+                />                
+                <AboutSkills
+                  head="Data Science & Machine Learning"
+                  body1="Languages: Python, R"
+                  body2=" Libraries: TensorFlow, PyTorch, Scikit-Learn, Pandas"
+                  body3="Data Visualization: Matplotlib, Seaborn, Plotly"
+                />
+                <AboutSkills
+                  head="DevOps & Tools"
+                  body1="Docker, Kubernetes"
+                  body2="AWS, Azure, GCP"
+                  body3="CI/CD: Jenkins, GitHub Actions, Travis CI"
+                />
               </div>
               <h3>Professional Experience</h3>
               <p>

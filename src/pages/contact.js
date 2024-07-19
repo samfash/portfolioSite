@@ -2,6 +2,8 @@ import React, {useEffect} from "react";
 import "../assets/Css/Contact.css";
 import { useLocation } from 'react-router-dom';
 import ContactForm from "../components/contactForm";
+import Weekday from "../components/weekday";
+import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 
 const Contact = () => {
   const location = useLocation();
@@ -24,17 +26,21 @@ const Contact = () => {
               <div className="work-hours col-md-6">
                 <h5><strong>Working Hours</strong></h5>
                 <p>check below to see the hours we are available</p>
-                <p className="day">Monday-Friday</p>
-                <p className="time">8am - 5pm</p>
-                <p className="day">Saturday</p>
-                <p className="time">10am - 3pm</p>
+                <Weekday
+                  day="Monday-Friday"
+                  time="8am - 5pm"
+                />
+                <Weekday
+                  day="Saturday"
+                  time="10am - 3pm"
+                />
               </div>
               <div className="address col-md-6">
                 <h2>Our address</h2>
                 <p> Get directions on the map</p>
                 <p>18, Ajibulu Street, Mafoluku Oshodi,lagos,Nigeria</p>
-                <p>+234 816 064 9644</p>
-                <p>samuelfasanya351@gmail.com</p>
+                <p><ArrowCircleRightOutlinedIcon color="primary"/>+234 816 064 9644</p>
+                <p><ArrowCircleRightOutlinedIcon color="primary"/>samuelfasanya351@gmail.com</p>
               </div>
             </div>
             <div className="form-right">
