@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/Css/About.css";
-import resume from "../assets/standcv.pdf";
+import resume from "../assets/SamuelFasanyaCV.pdf";
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import AboutSkills from "../components/aboutSkills";
 
