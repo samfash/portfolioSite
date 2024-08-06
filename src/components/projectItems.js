@@ -1,9 +1,16 @@
 import emissionPic from "../assets/images/enerscend-web.webp"
 import modelPic from "../assets/images/emission-pic.webp"
 import charityPic from "../assets/images/fash-charity.webp"
-
+import notewallPic from "../assets/images/notewall-pic.webp"
 
 const Projects = [
+    {
+      title: 'A Note taking web app',
+      description:' Created a user friendly web app to take notes for organizing thoughts, with adequate security, also being synced across any device with internet connection. ',
+      technologies: 'Typescript, Node.js, MongoDB, Jwt, Css',
+      impact: 'Easy and straight to the point note without any distractions.',
+      image: notewallPic
+    },
     {
       title: 'Company Website with Staff login',
       description: 'Created a responsive and user-friendly platform for our employees,ensuring they could access important internal resources securely and efficiently.',
