@@ -10,6 +10,7 @@ const ProjectCard = ({ project }) => {
         <p>{project.description}</p>
         <p><strong>Technologies:</strong> {project.technologies}</p>
         <p><strong>Impact:</strong> {project.impact}</p>
+        <p>LINK:{project.link}</p>
       </div>
     </div>
   );
