@@ -10,7 +10,9 @@ const ProjectCard = ({ project }) => {
         <p>{project.description}</p>
         <p><strong>Technologies:</strong> {project.technologies}</p>
         <p><strong>Impact:</strong> {project.impact}</p>
-        <p>LINK: <a href={project.link}>Click here</a></p>
+        <p>LINK: <a href={project.link}
+              style={{ color: "blue", textDecoration: "underline", fontWeight: "bold" }}
+              target="_blank" rel="noopener noreferrer">Click here</a></p>
       </div>
     </div>
   );
