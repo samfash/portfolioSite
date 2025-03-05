@@ -2,8 +2,17 @@ import emissionPic from "../assets/images/enerscend-web.webp"
 import modelPic from "../assets/images/emission-pic.webp"
 import charityPic from "../assets/images/fash-charity.webp"
 import notewallPic from "../assets/images/notewall-pic.webp"
+import bookPic from "../assets/images/booksorepic.webp"
 
 const Projects = [
+  {
+    title: 'A Book Store web app',
+    description:' A book store web app that allows users to search for books, add them to their cart, and make a purchase, with a user-friendly interface and secure payment processing.',
+    technologies: 'Typescript, Node.js, MongoDB, Jwt, Tailwindcss, Stripe, Flutterwave, Paystack',
+    impact: 'Simplified the process of purchasing books online and ensured secure payment processing.',
+    image: bookPic,
+    link: 'https://safas-book-store.vercel.app/'
+  },
     {
       title: 'A Message board web app',
       description:' Created a user friendly web app to put down notes across intended parties, with adequate security, also being synced across any device with internet connection. ',
