@@ -8,7 +8,7 @@ const Projects = [
   {
     title: 'A Book Store web app',
     description:' A book store web app that allows users to search for books, add them to their cart, and make a purchase, with a user-friendly interface and secure payment processing.',
-    technologies: 'Typescript, Node.js, MongoDB, Jwt, Tailwindcss, Stripe, Flutterwave, Paystack',
+    technologies: 'Typescript, Node.js, MongoDB, Jwt, Tailwindcss, Stripe, Flutterwave, Paystack, AWS',
     impact: 'Simplified the process of purchasing books online and ensured secure payment processing.',
     image: bookPic,
     link: 'https://safas-book-store.vercel.app/'
