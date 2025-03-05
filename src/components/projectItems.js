@@ -2,7 +2,7 @@ import emissionPic from "../assets/images/enerscend-web.webp"
 import modelPic from "../assets/images/emission-pic.webp"
 import charityPic from "../assets/images/fash-charity.webp"
 import notewallPic from "../assets/images/notewall-pic.webp"
-import bookPic from "../assets/images/booksorepic.webp"
+import bookPic from "../assets/images/bookstorepic.webp"
 
 const Projects = [
   {
